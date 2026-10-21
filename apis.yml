@@ -1,23 +1,68 @@
 aid: sapper
+
 name: Sapper Software
-description: 'Sapper Software is a company surfaced via the API Evangelist harvest backlog (source: g2-catalog)
-  and added to the network as a stub for full-pipeline profiling.'
+
+image: https://sapper.ai/wp-content/uploads/2026/05/light-theme-home.png
+
+description: 'Sapper Software provides AI‑powered accounts payable automation, delivering over 70% straight‑through processing. Their platform resolves invoice exceptions, automates matching, and integrates with major ERP systems, helping finance teams accelerate AP cycles and reduce manual effort.'
+
 url: https://raw.githubusercontent.com/api-evangelist/sapper/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:g2-catalog
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-21 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-21'
+
 modified: '2026-10-21'
+
 tags:
-- Company
-apis: []
+- Finance
+- Automation
+- AI
+- Accounts-Payable
+- ERP
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Hosts
+  url: hosts/sapper-hosts.yml
+- type: DomainSecurity
+  url: security/sapper-domain-security.yml
 - type: Website
   url: https://sapper.ai/
+- type: Blog
+  url: https://sapper.ai/blog/
+- type: Support
+  url: https://sapper.ai/support/
+- type: PrivacyPolicy
+  url: https://sapper.ai/privacy/
+
+apis: []
+x-enrichment:
+  date: '2026-10-21'
+  status: enriched
+  artifacts_added: 7
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local
+x-coverage:
+  state: none
+  reason: no-developer-program
+  method: derived
+  generated: '2026-10-21'
+  generator: derive-coverage.py (pre-flight evidence)
+  detail: >-
+    the company publishes no developer documentation host and no machine-readable contract on its own domain
+  evidence:
+  - url: https://sapper.ai/
+    status: 200

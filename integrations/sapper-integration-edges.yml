@@ -1,0 +1,18 @@
+generated: '2026-10-21'
+method: none
+source:
+- https://zapier.com/apps/sapper/integrations
+- https://zapier.com/apps/sapper-software/integrations
+- https://n8n.io/integrations/sapper/
+- https://composio.dev/toolkits/sapper
+- https://monid.ai/tools/sapper
+checked:
+- https://composio.dev/toolkits/sapper
+- https://monid.ai/tools/sapper
+- https://n8n.io/integrations/sapper/
+- https://zapier.com/apps/sapper-software/integrations
+- https://zapier.com/apps/sapper/integrations
+summary: null
+marketplace_apps: []
+edges: []
+templates: []
